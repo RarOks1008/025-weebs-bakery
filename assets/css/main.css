@@ -1,0 +1,142 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+.main_navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: #c19b77;
+}
+.main_navigation li {
+    padding: 10px 5px;
+}
+.main_navigation li a {
+    color: white;
+}
+.main_navigation li a:hover {
+    color: yellowgreen;
+}
+.title_holder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../images/title_image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+h1 {
+    color: white;
+    text-shadow: 2px 2px #000;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 30px;
+}
+h2 {
+    text-align: center;
+    padding: 10px 25px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    margin: 20px 0;
+    display: block;
+}
+.about_holder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h3 {
+    margin-top: 40px;
+    font-size: 25px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.product_text {
+    font-style: italic;
+    text-align: center;
+}
+h4 {
+    margin-top: 30px;
+    font-size: 20px;
+    text-align: center;
+}
+.products_holder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.products_holder img {
+    width: 25%;
+    border-radius: 10px;
+    margin: 1%;
+}
+.products_holder img:hover {
+    border: 5px solid rgba(0, 0, 0, 0.3);
+}
+.review_holder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.review_holder .comment {
+    margin: 20px;
+    width: 70%;
+    display: flex;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.02);
+    border-radius: 5px;
+}
+.review_holder .comment img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.review_holder .comment .comment_info {
+    text-align: justify;
+    width: 100%;
+}
+.review_holder .comment .comment_info .comment_author {
+    font-style: italic;
+    text-align: end;
+}
+.contact_holder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.contact_holder .contact_map {
+    width: 90%;
+    height: 450px;
+}
+@media screen and (max-width: 700px) {
+	.products_holder img {
+        width: 40%;
+    }
+}
+@media screen and (max-width: 400px) {
+    .main_navigation {
+        flex-direction: column;
+        align-items: center;
+    }
+	.products_holder img {
+        width: 80%;
+    }
+    .review_holder .comment {
+        width: 90%;
+    }
+}
